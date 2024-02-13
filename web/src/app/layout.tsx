@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Saira } from "next/font/google";
-import Header from "./ui/header";
 
-const saira = Saira({ subsets: ["latin"] });
+import Providers from "./Providers";
+import GlobalStyles from "./styles/global-styles";
+
+import Header from "./components/Header";
 
 export const metadata: Metadata = {
   title: "capputeeno",
@@ -16,9 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={saira.className}>
-        <Header />
-        {children}
+      <body>
+        <Providers>
+          <GlobalStyles />
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );
