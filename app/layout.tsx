@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
+import { Saira } from "next/font/google";
 
 import "./globals.css";
+
+const saira = Saira({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Capputeeno",
@@ -14,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body>{children}</body>
+    <html lang="pt-BR" className={saira.className}>
+      <body className="bg-shape-2">{children}</body>
     </html>
   );
 }
