@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={saira.className}>
-      <body className="bg-shape-2">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
