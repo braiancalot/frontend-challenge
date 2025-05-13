@@ -5,8 +5,8 @@ export function CategoryFilter() {
         TODOS OS PRODUTOS
       </span>
 
-      <span className="text-text-body cursor-pointer ">CAMISETAS</span>
-      <span className="text-text-body cursor-pointer ">CANECAS</span>
+      <span className="text-text-body cursor-pointer">CAMISETAS</span>
+      <span className="text-text-body cursor-pointer">CANECAS</span>
     </div>
   );
 }

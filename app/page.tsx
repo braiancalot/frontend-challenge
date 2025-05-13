@@ -1,5 +1,7 @@
 import { Saira_Stencil_One } from "next/font/google";
 
+import { Search } from "@/components/CatalogPage/Search";
+import { Cart } from "@/components/CatalogPage/Cart";
 import { CategoryFilter } from "@/components/CatalogPage/CategoryFilter";
 import { OrderSelect } from "@/components/CatalogPage/OrderSelect";
 import { Pagination } from "@/components/CatalogPage/Pagination";
@@ -14,17 +16,16 @@ export default function CatalogPage() {
   return (
     <>
       <header className="bg-shape-1">
-        <div className="max-w-[1120] m-auto flex justify-between items-center">
+        <div className="max-w-[1120] h-[80] m-auto flex justify-between items-center">
           <h1
             className={`${sairaStencilOne.className} text-[40px] text-header`}
           >
             capputeeno
           </h1>
 
-          <div className="flex gap-6">
-            <span>Search</span>
-
-            <span>Carrinho</span>
+          <div className="flex gap-6 items-center">
+            <Search />
+            <Cart />
           </div>
         </div>
       </header>
