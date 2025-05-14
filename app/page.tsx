@@ -41,20 +41,11 @@ export default function CatalogPage() {
         </div>
 
         <div className="max-w-[1120] m-auto mt-8 flex gap-8 flex-wrap">
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-
-          <Product />
-          <Product />
-          <Product />
-          <Product />
+          <Product
+            name="Caneca The Grounds"
+            price_in_cents={5864}
+            image_url="https://storage.googleapis.com/xesque-dev/challenge-images/caneca-05.jpg"
+          />
         </div>
 
         <div className="max-w-[1120] m-auto mt-[74] mb-[60] flex justify-end">

@@ -2,6 +2,8 @@ import Image from "next/image";
 import ShoppingBag from "public/shopping-bag.svg";
 
 export function Cart() {
+  // CartHook
+
   return (
     <button className="cursor-pointer hover:bg-shape-5 p-2 rounded-full active:bg-shape-3 relative">
       <Image src={ShoppingBag} alt="ShoppingBag" />
