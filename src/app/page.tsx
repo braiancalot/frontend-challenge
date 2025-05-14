@@ -6,16 +6,16 @@ import { Product } from "./components/Product";
 export default function CatalogPage() {
   return (
     <>
-      <div className="max-w-[1120] m-auto mt-8 flex justify-between items-center">
+      <div className="max-w-[1120px] m-auto mt-8 flex justify-between items-center">
         <CategoryFilter />
         <OrderSelect />
       </div>
 
-      <div className="max-w-[1120] m-auto mt-4 flex justify-end">
+      <div className="max-w-[1120px] m-auto mt-4 flex justify-end">
         <Pagination />
       </div>
 
-      <div className="max-w-[1120] m-auto mt-8 flex gap-8 flex-wrap">
+      <div className="max-w-[1120px] m-auto mt-8 flex gap-8 flex-wrap">
         <Product
           name="Caneca The Grounds"
           price_in_cents={5864}
@@ -23,7 +23,7 @@ export default function CatalogPage() {
         />
       </div>
 
-      <div className="max-w-[1120] m-auto mt-[74] mb-[60] flex justify-end">
+      <div className="max-w-[1120px] m-auto mt-[74px] mb-[60px] flex justify-end">
         <Pagination />
       </div>
     </>

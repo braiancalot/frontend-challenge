@@ -18,7 +18,7 @@ export function Product({ name, image_url, price_in_cents }: ProductProps) {
         alt={name}
         width={640}
         height={580}
-        className="w-[256] h-[300] object-cover"
+        className="w-[256px] h-[300px] object-cover"
       />
 
       <div className="flex flex-col px-3 py-2 gap-2">

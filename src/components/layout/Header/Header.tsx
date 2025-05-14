@@ -11,7 +11,7 @@ const sairaStencilOne = Saira_Stencil_One({
 export function Header() {
   return (
     <header className="bg-shape-1">
-      <div className="max-w-[1120] h-[80] m-auto flex justify-between items-center">
+      <div className="max-w-[1120px] h-[80px] m-auto flex justify-between items-center">
         <h1 className={`${sairaStencilOne.className} text-[40px] text-header`}>
           capputeeno
         </h1>

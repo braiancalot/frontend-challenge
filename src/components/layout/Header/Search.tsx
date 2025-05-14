@@ -14,7 +14,7 @@ export function Search() {
   return (
     <div className="relative">
       <input
-        className="w-[352] text-sm text-text-body placeholder:text-text-body bg-shape-5 px-4 py-2.5 rounded-lg focus:outline-shape-2"
+        className="w-[352px] text-sm text-text-body placeholder:text-text-body bg-shape-5 px-4 py-2.5 rounded-lg focus:outline-shape-2"
         type="text"
         placeholder="Procurando por algo específico?"
         value={search}
