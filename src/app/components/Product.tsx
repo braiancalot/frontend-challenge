@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 function formatPrice(priceInCents: number) {
-  return `R$ ${(priceInCents / 100).toString().replace(".", ",")}`;
+  return `R$ ${(priceInCents / 100).toFixed(2).toString().replace(".", ",")}`;
 }
 
 interface ProductProps {
