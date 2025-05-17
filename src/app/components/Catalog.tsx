@@ -29,8 +29,8 @@ export function Catalog({ products }: { products: Array<CatalogProduct> }) {
           <Product
             key={product.id}
             name={product.name}
-            price_in_cents={product.price_in_cents}
-            image_url={product.image_url}
+            price={product.price_in_cents}
+            imageUrl={product.image_url}
           />
         ))}
       </div>
