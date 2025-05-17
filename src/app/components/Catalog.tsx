@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import { CategoryFilter } from "./CategoryFilter";
 import { OrderSelect } from "./OrderSelect";
 import { Pagination } from "./Pagination";
@@ -12,7 +14,19 @@ interface CatalogProduct {
   price_in_cents: number;
 }
 
+const itemsPerPage = 12;
+
 export function Catalog({ products }: { products: Array<CatalogProduct> }) {
+  const [page, setPage] = useState(1);
+
+  const totalItems = products.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+  const startIndex = (page - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  const paginated = products.slice(startIndex, endIndex);
+
   return (
     <>
       <div className="max-w-[1120px] m-auto mt-8 flex justify-between items-center">
@@ -21,11 +35,11 @@ export function Catalog({ products }: { products: Array<CatalogProduct> }) {
       </div>
 
       <div className="max-w-[1120px] m-auto mt-4 flex justify-end">
-        <Pagination />
+        <Pagination page={page} setPage={setPage} totalPages={totalPages} />
       </div>
 
       <div className="max-w-[1120px] m-auto mt-8 flex gap-8 flex-wrap">
-        {products.map((product) => (
+        {paginated.map((product) => (
           <Product
             key={product.id}
             name={product.name}
@@ -36,7 +50,7 @@ export function Catalog({ products }: { products: Array<CatalogProduct> }) {
       </div>
 
       <div className="max-w-[1120px] m-auto mt-[74px] mb-[60px] flex justify-end">
-        <Pagination />
+        <Pagination page={page} setPage={setPage} totalPages={totalPages} />
       </div>
     </>
   );
