@@ -45,7 +45,7 @@ export function Pagination() {
                 ${
                   isActive
                     ? "text-orange-low border border-orange-low font-semibold"
-                    : "text-text-body hover:border hover:border-orange-low bg-shape-3"
+                    : "text-text-body bg-shape-3 hover:bg-shape-6"
                 }`}
             >
               {index + 1}
@@ -58,8 +58,7 @@ export function Pagination() {
         <button
           disabled={!hasPreviuosPage}
           onClick={handlePreviousPage}
-          className={`w-[32px] h-[32px] cursor-pointer bg-shape-3 rounded-lg text-text-body flex justify-center items-center hover:border hover:border-orange-low active:bg-shape-4
-            disabled:border-none disabled:cursor-default disabled:bg-shape-4`}
+          className="w-[32px] h-[32px] cursor-pointer bg-shape-3 rounded-lg text-text-body flex justify-center items-center hover:bg-shape-6 active:bg-shape-4 disabled:invisible"
         >
           <Image src={ChevromLeft} alt="ChevromLeft" />
         </button>
@@ -67,8 +66,7 @@ export function Pagination() {
         <button
           disabled={!hasNextPage}
           onClick={handleNextPage}
-          className={`w-[32px] h-[32px] cursor-pointer bg-shape-3 rounded-lg text-text-body flex justify-center items-center hover:border hover:border-orange-low active:bg-shape-4 
-            disabled:border-none disabled:cursor-default disabled:bg-shape-4`}
+          className="w-[32px] h-[32px] cursor-pointer bg-shape-3 rounded-lg text-text-body flex justify-center items-center hover:bg-shape-6 active:bg-shape-4 disabled:invisible"
         >
           <Image src={ChevromRight} alt="ChevromRight" />
         </button>
