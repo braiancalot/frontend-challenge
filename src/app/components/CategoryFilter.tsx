@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 import { Radio, RadioGroup } from "@headlessui/react";
 
@@ -9,9 +7,12 @@ const options = [
   { label: "CANECAS", value: "mugs", className: "w-[72px]" },
 ];
 
-export function CategoryFilter() {
-  const [filter, setFilter] = useState(options[0].value);
+interface CategoryFilterProps {
+  filter: string;
+  setFilter: React.Dispatch<React.SetStateAction<string>>;
+}
 
+export function CategoryFilter({ filter, setFilter }: CategoryFilterProps) {
   return (
     <RadioGroup value={filter} onChange={setFilter} className="flex gap-10">
       {options.map((option) => (
