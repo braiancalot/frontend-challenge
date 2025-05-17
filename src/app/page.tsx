@@ -1,31 +1,9 @@
-import { CategoryFilter } from "./components/CategoryFilter";
-import { OrderSelect } from "./components/OrderSelect";
-import { Pagination } from "./components/Pagination";
-import { Product } from "./components/Product";
+import db from "infra/db";
 
-export default function CatalogPage() {
-  return (
-    <>
-      <div className="max-w-[1120px] m-auto mt-8 flex justify-between items-center">
-        <CategoryFilter />
-        <OrderSelect />
-      </div>
+import { Catalog } from "./components/Catalog";
 
-      <div className="max-w-[1120px] m-auto mt-4 flex justify-end">
-        <Pagination />
-      </div>
+export default async function CatalogPage() {
+  const products = db.products;
 
-      <div className="max-w-[1120px] m-auto mt-8 flex gap-8 flex-wrap">
-        <Product
-          name="Caneca The Grounds"
-          price_in_cents={5864}
-          image_url="https://storage.googleapis.com/xesque-dev/challenge-images/caneca-05.jpg"
-        />
-      </div>
-
-      <div className="max-w-[1120px] m-auto mt-[74px] mb-[60px] flex justify-end">
-        <Pagination />
-      </div>
-    </>
-  );
+  return <Catalog products={products} />;
 }
