@@ -32,7 +32,7 @@ export function OrderSelect({ orderBy, setOrderBy }: OrderSelectProps) {
         </ListboxButton>
         <ListboxOptions
           modal={false}
-          className="bg-shape-1 mt-1 rounded-sm shadow px-3 py-2 outline-none flex flex-col absolute right-0 w-max"
+          className="bg-shape-1 mt-1 rounded-sm shadow px-3 py-2 outline-none flex flex-col absolute -left-9 sm:right-0 w-max"
         >
           {options.map((option) => (
             <ListboxOption

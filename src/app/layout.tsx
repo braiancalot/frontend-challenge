@@ -21,9 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={saira.className}>
-      <body>
+      <body className="max-h-dvh flex flex-col">
         <Header />
-        <main>{children}</main>
+        <main className="flex-1 overflow-auto">{children}</main>
       </body>
     </html>
   );

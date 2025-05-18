@@ -12,7 +12,7 @@ interface ProductProps {
 
 export function Product({ name, imageUrl, price }: ProductProps) {
   return (
-    <div className="rounded-t-lg rounded-b-md overflow-hidden bg-shape-1/40 cursor-pointer hover:shadow">
+    <div className="rounded-t-lg rounded-b-md overflow-hidden bg-shape-1/40 cursor-pointer hover:shadow active:shadow">
       <Image
         src={imageUrl}
         alt={name}

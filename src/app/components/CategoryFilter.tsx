@@ -14,7 +14,11 @@ interface CategoryFilterProps {
 
 export function CategoryFilter({ filter, setFilter }: CategoryFilterProps) {
   return (
-    <RadioGroup value={filter} onChange={setFilter} className="flex gap-10">
+    <RadioGroup
+      value={filter}
+      onChange={setFilter}
+      className="flex flex-col sm:flex-row gap-1 sm:gap-10 items-center"
+    >
       {options.map((option) => (
         <Radio
           key={option.value}

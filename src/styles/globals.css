@@ -29,8 +29,5 @@
 
 body {
   background: var(--color-shape-4);
-}
-
-html {
-  scrollbar-gutter: stable;
+  overflow: auto;
 }
