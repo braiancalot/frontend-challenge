@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-
 import {
   Listbox,
   ListboxButton,
@@ -12,6 +8,8 @@ import {
 import Image from "next/image";
 import ChevromDown from "public/chevrom-down.svg";
 
+import { CatalogOrderOption } from "src/types/catalog";
+
 const options = [
   { label: "Novidades", value: "newest" },
   { label: "Preço: Maior - menor", value: "price-desc" },
@@ -19,14 +17,12 @@ const options = [
   { label: "Mais vendidos", value: "best-sellers" },
 ];
 
-interface OrderOption {
-  label: string;
-  value: string;
+interface OrderSelectProps {
+  orderBy: CatalogOrderOption | null;
+  setOrderBy: React.Dispatch<React.SetStateAction<CatalogOrderOption | null>>;
 }
 
-export function OrderSelect() {
-  const [orderBy, setOrderBy] = useState<OrderOption | null>(null);
-
+export function OrderSelect({ orderBy, setOrderBy }: OrderSelectProps) {
   return (
     <Listbox value={orderBy} onChange={setOrderBy}>
       <ListboxButton className="flex items-center gap-2 text-text-body text-sm outline-none cursor-pointer">

@@ -1,51 +1,49 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { CategoryFilter } from "./CategoryFilter";
 import { OrderSelect } from "./OrderSelect";
 import { Pagination } from "./Pagination";
 import { Product } from "./Product";
 
-interface CatalogProduct {
-  id: string;
-  name: string;
-  image_url: string;
-  price_in_cents: number;
-  category: "mugs" | "t-shirts";
-}
+import { CatalogOrderOption, CatalogProduct } from "src/types/catalog";
+
+import {
+  getFilteredProducts,
+  getPaginatedProducts,
+  getSortedProducts,
+} from "src/utils/catalog";
 
 const itemsPerPage = 12;
 
-export function Catalog({ products }: { products: Array<CatalogProduct> }) {
+export function Catalog({ products }: { products: CatalogProduct[] }) {
   const [page, setPage] = useState(1);
   const [filter, setFilter] = useState("all");
+  const [orderBy, setOrderBy] = useState<CatalogOrderOption | null>(null);
 
-  const filtered =
-    filter === "all"
-      ? products
-      : products.filter((product) => product.category === filter);
+  const ordered = useMemo(() => {
+    return getSortedProducts(products, orderBy);
+  }, [products, orderBy]);
 
-  const totalItems = filtered.length;
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  const filtered = useMemo(() => {
+    return getFilteredProducts(ordered, filter);
+  }, [ordered, filter]);
 
-  const startIndex =
-    ((page <= totalPages ? page : totalPages) - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-
-  const paginated = filtered.slice(startIndex, endIndex);
+  const totalPages = Math.ceil(filtered.length / itemsPerPage);
+  const paginated = useMemo(() => {
+    return getPaginatedProducts(filtered, page, itemsPerPage, totalPages);
+  }, [filtered, page, totalPages]);
 
   useEffect(() => {
-    if (page > totalPages) {
-      setPage(totalPages);
-    }
-  }, [page, totalPages]);
+    setPage(1);
+  }, [filter, orderBy]);
 
   return (
     <>
       <div className="max-w-[1120px] m-auto mt-8 flex justify-between items-center">
         <CategoryFilter filter={filter} setFilter={setFilter} />
-        <OrderSelect />
+        <OrderSelect orderBy={orderBy} setOrderBy={setOrderBy} />
       </div>
 
       <div className="max-w-[1120px] m-auto mt-4 flex justify-end">
