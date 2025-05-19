@@ -1,18 +1,23 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function formatPrice(priceInCents: number) {
   return `R$ ${(priceInCents / 100).toFixed(2).toString().replace(".", ",")}`;
 }
 
 interface ProductProps {
+  id: string;
   name: string;
   imageUrl: string;
   price: number;
 }
 
-export function Product({ name, imageUrl, price }: ProductProps) {
+export function Product({ id, name, imageUrl, price }: ProductProps) {
   return (
-    <div className="rounded-t-lg rounded-b-md overflow-hidden bg-shape-1/40 cursor-pointer hover:shadow active:shadow">
+    <Link
+      href={`/product/${id}`}
+      className="rounded-t-lg rounded-b-md overflow-hidden bg-shape-1/40 cursor-pointer hover:shadow active:shadow"
+    >
       <Image
         src={imageUrl}
         alt={name}
@@ -30,6 +35,6 @@ export function Product({ name, imageUrl, price }: ProductProps) {
           {formatPrice(price)}
         </span>
       </div>
-    </div>
+    </Link>
   );
 }
