@@ -1,4 +1,6 @@
 import { faker } from "@faker-js/faker";
+import path from "path";
+import fs from "fs";
 
 const TOTAL_PAGES = 5;
 
@@ -106,6 +108,7 @@ const allProducts = new Array(TOTAL_PAGES).fill(1).reduce((acc) => {
   return [...acc, ...products];
 }, []);
 
-export default {
-  products: allProducts,
-};
+const filePath = path.resolve("public", "products.json");
+fs.writeFileSync(filePath, JSON.stringify({ products: allProducts }, null, 2));
+
+console.log("Arquivo gerado em:", filePath);

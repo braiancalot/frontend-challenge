@@ -1,0 +1,604 @@
+{
+  "products": [
+    {
+      "name": "Camiseta not today.",
+      "description": "Cauda desino audax tot. Confero vesco timor desino pel at decipio custodia tergum. Tutis aestus victoria crudelis.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-05.jpg",
+      "category": "t-shirts",
+      "id": "fde3bcbe-f5d3-4dd4-afa9-e26e7283b15e",
+      "price_in_cents": 9445,
+      "sales": 2,
+      "created_at": "2024-08-09T17:10:09.795Z"
+    },
+    {
+      "name": "Camiseta evening",
+      "description": "Taedium illo verbum adaugeo claro officia nisi. Repellendus solitudo abscido atrox aegrus aegre maiores socius. Sub amo sumptus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-02.jpg",
+      "category": "t-shirts",
+      "id": "70a69a8f-4ba7-4e2d-a731-a19442dacc55",
+      "price_in_cents": 9005,
+      "sales": 7,
+      "created_at": "2024-07-04T02:03:40.127Z"
+    },
+    {
+      "name": "Caneca Never settle",
+      "description": "Antiquus vorax cura tantum teres cultura copiose. Cibus utique universe comparo coaegresco sufficio verumtamen comprehendo voro stips. Alienus video casso.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-03.jpg",
+      "category": "mugs",
+      "id": "1f04b624-50d7-4d55-b03e-abd8a4a0109b",
+      "price_in_cents": 8502,
+      "sales": 5,
+      "created_at": "2024-12-24T21:42:16.246Z"
+    },
+    {
+      "name": "Camiseta Ramones",
+      "description": "Aurum tripudio cubicularis doloribus vulgivagus audacia torrens utpote tandem. Territo thema venio demens talio. Ullus iste absorbeo delectus deserunt cilicium via coniecto.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-04.jpg",
+      "category": "t-shirts",
+      "id": "1be7ba5e-9222-40f4-b14a-12a1dfebdef6",
+      "price_in_cents": 9776,
+      "sales": 30,
+      "created_at": "2024-12-31T14:40:33.014Z"
+    },
+    {
+      "name": "Camiseta Broken Saints",
+      "description": "Adulatio aestus teneo appello sufficio appono currus maiores. Tutis argentum dolores nesciunt. Copiose barba umerus tricesimus aegrotatio cilicium.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-03.jpg",
+      "category": "t-shirts",
+      "id": "6c9f2424-f226-42c6-b3e0-eaa4725ee6c0",
+      "price_in_cents": 2871,
+      "sales": 35,
+      "created_at": "2024-06-18T05:32:35.218Z"
+    },
+    {
+      "name": "Caneca de cerâmica rústica",
+      "description": "Inventore absorbeo attonbitus recusandae cado acer enim commemoro. Temperantia tergum constans vir ulterius cibo admoneo. Triduana cupiditate crapula amitto beneficium umerus tripudio sumptus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg",
+      "category": "mugs",
+      "id": "74915176-4cc5-43a7-adb4-595e25cc730b",
+      "price_in_cents": 6388,
+      "sales": 5,
+      "created_at": "2024-10-14T23:59:50.531Z"
+    },
+    {
+      "name": "Caneca Decaf! P&Co",
+      "description": "Pax ager currus canto velociter quo. Utique arceo xiphias amaritudo cogo correptius. Acquiro tam compono.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-02.jpg",
+      "category": "mugs",
+      "id": "0a8fb7c3-f425-4596-a903-f1de99330dd8",
+      "price_in_cents": 9481,
+      "sales": 33,
+      "created_at": "2024-11-29T08:18:23.401Z"
+    },
+    {
+      "name": "Camiseta Outcast",
+      "description": "Peccatus sublime curso corporis concedo pauper saepe varietas texo. Arbor aestus careo sophismata crastinus crudelis quidem tolero quidem basium. Comburo carpo strenuus anser creta.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-06.jpg",
+      "category": "t-shirts",
+      "id": "a3521b86-62de-4111-afeb-667fd326733b",
+      "price_in_cents": 8851,
+      "sales": 39,
+      "created_at": "2025-03-18T07:20:47.767Z"
+    },
+    {
+      "name": "Caneca preto fosco",
+      "description": "Tempore ceno atrox delectatio tardus velut tubineus thymbra explicabo verbum. Aspicio cornu vehemens volo curiositas terreo benigne perferendis bonus cedo. Patrocinor certus alioqui tergiversatio denuncio vulnero repudiandae vicinus pecto.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-01.jpg",
+      "category": "mugs",
+      "id": "8c466c87-5a55-4ce2-b816-a13823f8dba2",
+      "price_in_cents": 7054,
+      "sales": 37,
+      "created_at": "2024-11-21T20:20:58.763Z"
+    },
+    {
+      "name": "Caneca Black Ring",
+      "description": "Tutamen adaugeo suffoco vir. Cuius crur cognomen. Accommodo illo comes amo tres aliquid audax reiciendis velit apparatus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-04.jpg",
+      "category": "mugs",
+      "id": "96ab1c0a-739d-4bcf-a626-4ced76202c24",
+      "price_in_cents": 4302,
+      "sales": 2,
+      "created_at": "2024-06-30T07:52:06.111Z"
+    },
+    {
+      "name": "Caneca The Grounds",
+      "description": "Cometes succurro valens curis depopulo vitiosus cedo teres supellex vester. Impedit summopere decretum. Accommodo curo quae sponte patrocinor officia desipio.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-05.jpg",
+      "category": "mugs",
+      "id": "553ab705-ddce-416d-8237-f86b449dca46",
+      "price_in_cents": 8269,
+      "sales": 35,
+      "created_at": "2025-01-30T09:00:08.629Z"
+    },
+    {
+      "name": "Camiseta DREAMER",
+      "description": "Ubi repudiandae culpa pax cruciamentum vitae similique tenus claudeo ventito. Theologus blandior adsuesco unde brevis. Pectus aedificium vereor temperantia sursum.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-01.jpg",
+      "category": "t-shirts",
+      "id": "00db51a4-bc09-44f6-9db4-4913ed131172",
+      "price_in_cents": 9574,
+      "sales": 28,
+      "created_at": "2024-08-01T21:26:55.520Z"
+    },
+    {
+      "name": "Camiseta Broken Saints",
+      "description": "Adulatio aestus teneo appello sufficio appono currus maiores. Tutis argentum dolores nesciunt. Copiose barba umerus tricesimus aegrotatio cilicium.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-03.jpg",
+      "category": "t-shirts",
+      "id": "72783e2e-e43c-4d56-b50d-bf2452ce66e1",
+      "price_in_cents": 7662,
+      "sales": 15,
+      "created_at": "2025-03-06T10:26:11.668Z"
+    },
+    {
+      "name": "Camiseta evening",
+      "description": "Taedium illo verbum adaugeo claro officia nisi. Repellendus solitudo abscido atrox aegrus aegre maiores socius. Sub amo sumptus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-02.jpg",
+      "category": "t-shirts",
+      "id": "1431d066-c9ac-4dc6-a253-7802e09c1c59",
+      "price_in_cents": 6752,
+      "sales": 18,
+      "created_at": "2025-03-06T05:07:30.790Z"
+    },
+    {
+      "name": "Caneca Never settle",
+      "description": "Antiquus vorax cura tantum teres cultura copiose. Cibus utique universe comparo coaegresco sufficio verumtamen comprehendo voro stips. Alienus video casso.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-03.jpg",
+      "category": "mugs",
+      "id": "42e3459b-5974-4e94-a16f-281ff34689b0",
+      "price_in_cents": 3995,
+      "sales": 35,
+      "created_at": "2024-09-26T14:33:09.064Z"
+    },
+    {
+      "name": "Camiseta Ramones",
+      "description": "Aurum tripudio cubicularis doloribus vulgivagus audacia torrens utpote tandem. Territo thema venio demens talio. Ullus iste absorbeo delectus deserunt cilicium via coniecto.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-04.jpg",
+      "category": "t-shirts",
+      "id": "a5bb4f8a-7a6a-4c2f-a5d2-49f6b4d08f12",
+      "price_in_cents": 7304,
+      "sales": 18,
+      "created_at": "2025-02-22T13:41:53.809Z"
+    },
+    {
+      "name": "Caneca Decaf! P&Co",
+      "description": "Pax ager currus canto velociter quo. Utique arceo xiphias amaritudo cogo correptius. Acquiro tam compono.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-02.jpg",
+      "category": "mugs",
+      "id": "8a42915d-e3d2-4dcb-9c67-0dabc3ae17f2",
+      "price_in_cents": 9757,
+      "sales": 34,
+      "created_at": "2025-02-24T07:31:21.504Z"
+    },
+    {
+      "name": "Camiseta Outcast",
+      "description": "Peccatus sublime curso corporis concedo pauper saepe varietas texo. Arbor aestus careo sophismata crastinus crudelis quidem tolero quidem basium. Comburo carpo strenuus anser creta.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-06.jpg",
+      "category": "t-shirts",
+      "id": "6158f9b0-cc13-44d2-a962-fc618d4975eb",
+      "price_in_cents": 8227,
+      "sales": 12,
+      "created_at": "2025-01-07T21:00:35.046Z"
+    },
+    {
+      "name": "Caneca preto fosco",
+      "description": "Tempore ceno atrox delectatio tardus velut tubineus thymbra explicabo verbum. Aspicio cornu vehemens volo curiositas terreo benigne perferendis bonus cedo. Patrocinor certus alioqui tergiversatio denuncio vulnero repudiandae vicinus pecto.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-01.jpg",
+      "category": "mugs",
+      "id": "23679e33-92ed-4639-ab5e-adb42fc8103b",
+      "price_in_cents": 4779,
+      "sales": 6,
+      "created_at": "2024-07-07T13:13:40.403Z"
+    },
+    {
+      "name": "Caneca The Grounds",
+      "description": "Cometes succurro valens curis depopulo vitiosus cedo teres supellex vester. Impedit summopere decretum. Accommodo curo quae sponte patrocinor officia desipio.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-05.jpg",
+      "category": "mugs",
+      "id": "c29a1c60-e452-408c-ae9f-1745c76e8258",
+      "price_in_cents": 6349,
+      "sales": 22,
+      "created_at": "2025-01-13T22:42:11.242Z"
+    },
+    {
+      "name": "Caneca Black Ring",
+      "description": "Tutamen adaugeo suffoco vir. Cuius crur cognomen. Accommodo illo comes amo tres aliquid audax reiciendis velit apparatus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-04.jpg",
+      "category": "mugs",
+      "id": "d952b743-c950-4500-b4d5-e6f8d25ce859",
+      "price_in_cents": 5066,
+      "sales": 25,
+      "created_at": "2025-03-25T09:43:33.892Z"
+    },
+    {
+      "name": "Caneca de cerâmica rústica",
+      "description": "Inventore absorbeo attonbitus recusandae cado acer enim commemoro. Temperantia tergum constans vir ulterius cibo admoneo. Triduana cupiditate crapula amitto beneficium umerus tripudio sumptus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg",
+      "category": "mugs",
+      "id": "720c02a6-8158-4c48-b52e-01815556d61f",
+      "price_in_cents": 2681,
+      "sales": 6,
+      "created_at": "2024-11-08T05:03:13.526Z"
+    },
+    {
+      "name": "Camiseta not today.",
+      "description": "Cauda desino audax tot. Confero vesco timor desino pel at decipio custodia tergum. Tutis aestus victoria crudelis.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-05.jpg",
+      "category": "t-shirts",
+      "id": "09915ef7-1d9e-4250-85be-872a328b1610",
+      "price_in_cents": 3878,
+      "sales": 2,
+      "created_at": "2024-08-12T03:45:20.007Z"
+    },
+    {
+      "name": "Camiseta DREAMER",
+      "description": "Ubi repudiandae culpa pax cruciamentum vitae similique tenus claudeo ventito. Theologus blandior adsuesco unde brevis. Pectus aedificium vereor temperantia sursum.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-01.jpg",
+      "category": "t-shirts",
+      "id": "ee2de189-484b-47e6-a9ee-aa78d41c3efa",
+      "price_in_cents": 9859,
+      "sales": 27,
+      "created_at": "2025-05-06T23:59:20.127Z"
+    },
+    {
+      "name": "Camiseta not today.",
+      "description": "Cauda desino audax tot. Confero vesco timor desino pel at decipio custodia tergum. Tutis aestus victoria crudelis.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-05.jpg",
+      "category": "t-shirts",
+      "id": "7a94fb31-0f26-4be1-9c53-686e75b1aed9",
+      "price_in_cents": 6719,
+      "sales": 40,
+      "created_at": "2024-08-14T06:22:05.140Z"
+    },
+    {
+      "name": "Caneca The Grounds",
+      "description": "Cometes succurro valens curis depopulo vitiosus cedo teres supellex vester. Impedit summopere decretum. Accommodo curo quae sponte patrocinor officia desipio.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-05.jpg",
+      "category": "mugs",
+      "id": "e3a4cb53-6ee0-4502-8ce2-18b28883a55b",
+      "price_in_cents": 7086,
+      "sales": 4,
+      "created_at": "2024-07-05T16:05:14.960Z"
+    },
+    {
+      "name": "Camiseta evening",
+      "description": "Taedium illo verbum adaugeo claro officia nisi. Repellendus solitudo abscido atrox aegrus aegre maiores socius. Sub amo sumptus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-02.jpg",
+      "category": "t-shirts",
+      "id": "d7a44a40-00ed-4efe-a5db-079806a7a0e1",
+      "price_in_cents": 3637,
+      "sales": 13,
+      "created_at": "2024-11-07T02:02:32.508Z"
+    },
+    {
+      "name": "Camiseta DREAMER",
+      "description": "Ubi repudiandae culpa pax cruciamentum vitae similique tenus claudeo ventito. Theologus blandior adsuesco unde brevis. Pectus aedificium vereor temperantia sursum.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-01.jpg",
+      "category": "t-shirts",
+      "id": "bc5c7f9e-173f-4f78-ba12-3092fb33c77e",
+      "price_in_cents": 5706,
+      "sales": 12,
+      "created_at": "2025-02-27T17:17:07.218Z"
+    },
+    {
+      "name": "Caneca de cerâmica rústica",
+      "description": "Inventore absorbeo attonbitus recusandae cado acer enim commemoro. Temperantia tergum constans vir ulterius cibo admoneo. Triduana cupiditate crapula amitto beneficium umerus tripudio sumptus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg",
+      "category": "mugs",
+      "id": "a2e1c38d-1a99-400a-b216-b08b9785f37e",
+      "price_in_cents": 7538,
+      "sales": 20,
+      "created_at": "2025-01-15T21:09:36.994Z"
+    },
+    {
+      "name": "Caneca Never settle",
+      "description": "Antiquus vorax cura tantum teres cultura copiose. Cibus utique universe comparo coaegresco sufficio verumtamen comprehendo voro stips. Alienus video casso.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-03.jpg",
+      "category": "mugs",
+      "id": "ac84f626-e5bc-40d5-9a4d-54c87e050c6a",
+      "price_in_cents": 9998,
+      "sales": 38,
+      "created_at": "2024-09-12T00:02:43.630Z"
+    },
+    {
+      "name": "Caneca Decaf! P&Co",
+      "description": "Pax ager currus canto velociter quo. Utique arceo xiphias amaritudo cogo correptius. Acquiro tam compono.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-02.jpg",
+      "category": "mugs",
+      "id": "a5a1b708-4ec6-4126-b9fc-1b6667586710",
+      "price_in_cents": 8134,
+      "sales": 19,
+      "created_at": "2024-12-30T06:26:40.444Z"
+    },
+    {
+      "name": "Camiseta Ramones",
+      "description": "Aurum tripudio cubicularis doloribus vulgivagus audacia torrens utpote tandem. Territo thema venio demens talio. Ullus iste absorbeo delectus deserunt cilicium via coniecto.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-04.jpg",
+      "category": "t-shirts",
+      "id": "09970a85-e082-4959-9cb1-08fd1e1df746",
+      "price_in_cents": 4465,
+      "sales": 24,
+      "created_at": "2025-04-09T22:53:51.177Z"
+    },
+    {
+      "name": "Camiseta Broken Saints",
+      "description": "Adulatio aestus teneo appello sufficio appono currus maiores. Tutis argentum dolores nesciunt. Copiose barba umerus tricesimus aegrotatio cilicium.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-03.jpg",
+      "category": "t-shirts",
+      "id": "8757d5f1-25fc-498e-b4fb-2cac317843ab",
+      "price_in_cents": 2683,
+      "sales": 18,
+      "created_at": "2024-07-19T05:10:36.794Z"
+    },
+    {
+      "name": "Caneca Black Ring",
+      "description": "Tutamen adaugeo suffoco vir. Cuius crur cognomen. Accommodo illo comes amo tres aliquid audax reiciendis velit apparatus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-04.jpg",
+      "category": "mugs",
+      "id": "e1d3b460-bda5-45dd-8a94-fb764fa25aa1",
+      "price_in_cents": 7539,
+      "sales": 32,
+      "created_at": "2024-12-09T04:51:32.504Z"
+    },
+    {
+      "name": "Caneca preto fosco",
+      "description": "Tempore ceno atrox delectatio tardus velut tubineus thymbra explicabo verbum. Aspicio cornu vehemens volo curiositas terreo benigne perferendis bonus cedo. Patrocinor certus alioqui tergiversatio denuncio vulnero repudiandae vicinus pecto.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-01.jpg",
+      "category": "mugs",
+      "id": "9505c62f-679c-4527-8dac-71f22fdd4d46",
+      "price_in_cents": 7651,
+      "sales": 24,
+      "created_at": "2024-09-20T18:44:51.281Z"
+    },
+    {
+      "name": "Camiseta Outcast",
+      "description": "Peccatus sublime curso corporis concedo pauper saepe varietas texo. Arbor aestus careo sophismata crastinus crudelis quidem tolero quidem basium. Comburo carpo strenuus anser creta.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-06.jpg",
+      "category": "t-shirts",
+      "id": "cbec2d49-e743-4aa9-8a2f-176d521423c8",
+      "price_in_cents": 6500,
+      "sales": 35,
+      "created_at": "2025-05-08T21:14:50.046Z"
+    },
+    {
+      "name": "Camiseta Broken Saints",
+      "description": "Adulatio aestus teneo appello sufficio appono currus maiores. Tutis argentum dolores nesciunt. Copiose barba umerus tricesimus aegrotatio cilicium.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-03.jpg",
+      "category": "t-shirts",
+      "id": "9b13b3f4-2b77-4aae-ac6f-4594bae5eb89",
+      "price_in_cents": 3719,
+      "sales": 18,
+      "created_at": "2024-11-18T13:28:31.792Z"
+    },
+    {
+      "name": "Caneca Black Ring",
+      "description": "Tutamen adaugeo suffoco vir. Cuius crur cognomen. Accommodo illo comes amo tres aliquid audax reiciendis velit apparatus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-04.jpg",
+      "category": "mugs",
+      "id": "b2063e8e-1bde-4264-bb09-5c22ee1be0e6",
+      "price_in_cents": 4201,
+      "sales": 24,
+      "created_at": "2024-07-21T06:43:53.000Z"
+    },
+    {
+      "name": "Camiseta not today.",
+      "description": "Cauda desino audax tot. Confero vesco timor desino pel at decipio custodia tergum. Tutis aestus victoria crudelis.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-05.jpg",
+      "category": "t-shirts",
+      "id": "e9990d09-ccaa-4b41-9491-b088aee50447",
+      "price_in_cents": 4020,
+      "sales": 27,
+      "created_at": "2024-06-08T04:29:41.494Z"
+    },
+    {
+      "name": "Caneca Decaf! P&Co",
+      "description": "Pax ager currus canto velociter quo. Utique arceo xiphias amaritudo cogo correptius. Acquiro tam compono.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-02.jpg",
+      "category": "mugs",
+      "id": "20728b4f-33ca-45f1-8d16-3914da008b66",
+      "price_in_cents": 2874,
+      "sales": 13,
+      "created_at": "2024-12-25T10:01:51.510Z"
+    },
+    {
+      "name": "Caneca The Grounds",
+      "description": "Cometes succurro valens curis depopulo vitiosus cedo teres supellex vester. Impedit summopere decretum. Accommodo curo quae sponte patrocinor officia desipio.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-05.jpg",
+      "category": "mugs",
+      "id": "72b0d1e8-9f84-45d7-b1e0-522e534dd0fd",
+      "price_in_cents": 7179,
+      "sales": 9,
+      "created_at": "2025-05-09T19:05:00.574Z"
+    },
+    {
+      "name": "Camiseta Outcast",
+      "description": "Peccatus sublime curso corporis concedo pauper saepe varietas texo. Arbor aestus careo sophismata crastinus crudelis quidem tolero quidem basium. Comburo carpo strenuus anser creta.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-06.jpg",
+      "category": "t-shirts",
+      "id": "369f44f2-f7b7-4115-bf32-e40da8515ec4",
+      "price_in_cents": 9168,
+      "sales": 32,
+      "created_at": "2024-11-07T14:32:11.917Z"
+    },
+    {
+      "name": "Camiseta evening",
+      "description": "Taedium illo verbum adaugeo claro officia nisi. Repellendus solitudo abscido atrox aegrus aegre maiores socius. Sub amo sumptus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-02.jpg",
+      "category": "t-shirts",
+      "id": "1c06fecb-26fe-467c-a8bf-863c8be4fe31",
+      "price_in_cents": 3812,
+      "sales": 37,
+      "created_at": "2024-12-01T07:58:14.516Z"
+    },
+    {
+      "name": "Caneca Never settle",
+      "description": "Antiquus vorax cura tantum teres cultura copiose. Cibus utique universe comparo coaegresco sufficio verumtamen comprehendo voro stips. Alienus video casso.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-03.jpg",
+      "category": "mugs",
+      "id": "2bb50b4f-8d13-44b0-9c19-e56a740fa000",
+      "price_in_cents": 9641,
+      "sales": 31,
+      "created_at": "2025-04-17T05:55:21.375Z"
+    },
+    {
+      "name": "Camiseta Ramones",
+      "description": "Aurum tripudio cubicularis doloribus vulgivagus audacia torrens utpote tandem. Territo thema venio demens talio. Ullus iste absorbeo delectus deserunt cilicium via coniecto.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-04.jpg",
+      "category": "t-shirts",
+      "id": "70e5fdc8-2b85-4e0e-97db-1a62689b82cd",
+      "price_in_cents": 3299,
+      "sales": 20,
+      "created_at": "2024-10-01T12:56:42.507Z"
+    },
+    {
+      "name": "Caneca preto fosco",
+      "description": "Tempore ceno atrox delectatio tardus velut tubineus thymbra explicabo verbum. Aspicio cornu vehemens volo curiositas terreo benigne perferendis bonus cedo. Patrocinor certus alioqui tergiversatio denuncio vulnero repudiandae vicinus pecto.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-01.jpg",
+      "category": "mugs",
+      "id": "9fe8748a-4533-4c76-8dd0-dde9f9a302ea",
+      "price_in_cents": 5771,
+      "sales": 30,
+      "created_at": "2024-10-24T00:08:23.062Z"
+    },
+    {
+      "name": "Caneca de cerâmica rústica",
+      "description": "Inventore absorbeo attonbitus recusandae cado acer enim commemoro. Temperantia tergum constans vir ulterius cibo admoneo. Triduana cupiditate crapula amitto beneficium umerus tripudio sumptus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg",
+      "category": "mugs",
+      "id": "7e1918a7-8013-4419-8c88-ae1f692b7b7b",
+      "price_in_cents": 6611,
+      "sales": 33,
+      "created_at": "2025-01-22T03:44:48.130Z"
+    },
+    {
+      "name": "Camiseta DREAMER",
+      "description": "Ubi repudiandae culpa pax cruciamentum vitae similique tenus claudeo ventito. Theologus blandior adsuesco unde brevis. Pectus aedificium vereor temperantia sursum.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-01.jpg",
+      "category": "t-shirts",
+      "id": "5b005545-387e-46a0-a265-dc830d3a21ef",
+      "price_in_cents": 7818,
+      "sales": 22,
+      "created_at": "2024-08-26T04:58:24.292Z"
+    },
+    {
+      "name": "Caneca Black Ring",
+      "description": "Tutamen adaugeo suffoco vir. Cuius crur cognomen. Accommodo illo comes amo tres aliquid audax reiciendis velit apparatus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-04.jpg",
+      "category": "mugs",
+      "id": "47fc941c-4742-4289-b0c3-f1fa5a469fb8",
+      "price_in_cents": 5442,
+      "sales": 26,
+      "created_at": "2024-09-15T11:48:59.529Z"
+    },
+    {
+      "name": "Camiseta evening",
+      "description": "Taedium illo verbum adaugeo claro officia nisi. Repellendus solitudo abscido atrox aegrus aegre maiores socius. Sub amo sumptus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-02.jpg",
+      "category": "t-shirts",
+      "id": "0325ffbc-78c5-454a-8873-b7808c974351",
+      "price_in_cents": 8315,
+      "sales": 35,
+      "created_at": "2025-02-06T18:44:41.591Z"
+    },
+    {
+      "name": "Camiseta Ramones",
+      "description": "Aurum tripudio cubicularis doloribus vulgivagus audacia torrens utpote tandem. Territo thema venio demens talio. Ullus iste absorbeo delectus deserunt cilicium via coniecto.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-04.jpg",
+      "category": "t-shirts",
+      "id": "fa9bf30e-210a-44f0-9617-fc68f28a09c5",
+      "price_in_cents": 6527,
+      "sales": 35,
+      "created_at": "2024-10-02T20:54:23.910Z"
+    },
+    {
+      "name": "Camiseta not today.",
+      "description": "Cauda desino audax tot. Confero vesco timor desino pel at decipio custodia tergum. Tutis aestus victoria crudelis.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-05.jpg",
+      "category": "t-shirts",
+      "id": "519faae7-dc51-40c3-8158-57f0e396bcd1",
+      "price_in_cents": 3657,
+      "sales": 0,
+      "created_at": "2024-09-01T04:13:45.728Z"
+    },
+    {
+      "name": "Caneca de cerâmica rústica",
+      "description": "Inventore absorbeo attonbitus recusandae cado acer enim commemoro. Temperantia tergum constans vir ulterius cibo admoneo. Triduana cupiditate crapula amitto beneficium umerus tripudio sumptus.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg",
+      "category": "mugs",
+      "id": "c4606fcb-25da-41ad-868a-eaa3100b3b2a",
+      "price_in_cents": 8539,
+      "sales": 6,
+      "created_at": "2025-01-01T03:33:10.700Z"
+    },
+    {
+      "name": "Camiseta Outcast",
+      "description": "Peccatus sublime curso corporis concedo pauper saepe varietas texo. Arbor aestus careo sophismata crastinus crudelis quidem tolero quidem basium. Comburo carpo strenuus anser creta.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-06.jpg",
+      "category": "t-shirts",
+      "id": "eb63cb04-f733-49be-bc50-56c2450f86ff",
+      "price_in_cents": 6820,
+      "sales": 13,
+      "created_at": "2025-01-20T22:05:31.067Z"
+    },
+    {
+      "name": "Camiseta Broken Saints",
+      "description": "Adulatio aestus teneo appello sufficio appono currus maiores. Tutis argentum dolores nesciunt. Copiose barba umerus tricesimus aegrotatio cilicium.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-03.jpg",
+      "category": "t-shirts",
+      "id": "33762229-9e83-4bca-8208-14c6c378a105",
+      "price_in_cents": 9273,
+      "sales": 32,
+      "created_at": "2025-01-04T23:48:32.792Z"
+    },
+    {
+      "name": "Caneca Decaf! P&Co",
+      "description": "Pax ager currus canto velociter quo. Utique arceo xiphias amaritudo cogo correptius. Acquiro tam compono.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-02.jpg",
+      "category": "mugs",
+      "id": "5668813a-6a33-4925-99ce-5826449b1691",
+      "price_in_cents": 7028,
+      "sales": 10,
+      "created_at": "2025-04-22T23:53:50.745Z"
+    },
+    {
+      "name": "Caneca The Grounds",
+      "description": "Cometes succurro valens curis depopulo vitiosus cedo teres supellex vester. Impedit summopere decretum. Accommodo curo quae sponte patrocinor officia desipio.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-05.jpg",
+      "category": "mugs",
+      "id": "c8596336-3c15-4b90-8640-f4f565603b5e",
+      "price_in_cents": 5916,
+      "sales": 18,
+      "created_at": "2024-10-19T23:41:42.020Z"
+    },
+    {
+      "name": "Caneca Never settle",
+      "description": "Antiquus vorax cura tantum teres cultura copiose. Cibus utique universe comparo coaegresco sufficio verumtamen comprehendo voro stips. Alienus video casso.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-03.jpg",
+      "category": "mugs",
+      "id": "059eeaac-e0f5-4723-af32-7ac444240603",
+      "price_in_cents": 3369,
+      "sales": 18,
+      "created_at": "2024-06-12T21:57:14.462Z"
+    },
+    {
+      "name": "Caneca preto fosco",
+      "description": "Tempore ceno atrox delectatio tardus velut tubineus thymbra explicabo verbum. Aspicio cornu vehemens volo curiositas terreo benigne perferendis bonus cedo. Patrocinor certus alioqui tergiversatio denuncio vulnero repudiandae vicinus pecto.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-01.jpg",
+      "category": "mugs",
+      "id": "6970acbe-61b2-4d71-ab80-87901d8b70a1",
+      "price_in_cents": 9858,
+      "sales": 29,
+      "created_at": "2024-12-02T05:48:10.222Z"
+    },
+    {
+      "name": "Camiseta DREAMER",
+      "description": "Ubi repudiandae culpa pax cruciamentum vitae similique tenus claudeo ventito. Theologus blandior adsuesco unde brevis. Pectus aedificium vereor temperantia sursum.",
+      "image_url": "https://storage.googleapis.com/xesque-dev/challenge-images/camiseta-01.jpg",
+      "category": "t-shirts",
+      "id": "91bc48a7-e065-4650-ad0d-84c12e7c9c53",
+      "price_in_cents": 4354,
+      "sales": 34,
+      "created_at": "2024-12-19T11:14:30.777Z"
+    }
+  ]
+}
