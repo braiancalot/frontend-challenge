@@ -1,9 +1,10 @@
-import { CatalogOrderOption, CatalogProduct } from "src/types/catalog";
+import { Product } from "src/types/common";
+import { CatalogOrderOption } from "src/types/catalog";
 
 export function getSortedProducts(
-  products: CatalogProduct[],
+  products: Product[],
   orderBy: CatalogOrderOption | null,
-): CatalogProduct[] {
+): Product[] {
   if (!orderBy) return products;
 
   return [...products].sort((a, b) => {
@@ -26,20 +27,20 @@ export function getSortedProducts(
 }
 
 export function getFilteredProducts(
-  products: CatalogProduct[],
+  products: Product[],
   filter: string,
-): CatalogProduct[] {
+): Product[] {
   if (filter === "all") return products;
 
   return products.filter((product) => product.category === filter);
 }
 
 export function getPaginatedProducts(
-  products: CatalogProduct[],
+  products: Product[],
   page: number,
   itemsPerPage: number,
   totalPages: number,
-): CatalogProduct[] {
+): Product[] {
   const safePage = Math.min(page, totalPages || 1);
   const startIndex = (safePage - 1) * itemsPerPage;
 

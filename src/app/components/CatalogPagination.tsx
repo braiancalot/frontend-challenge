@@ -2,13 +2,17 @@ import Image from "next/image";
 import ChevromLeft from "public/chevrom-left.svg";
 import ChevromRight from "public/chevrom-right.svg";
 
-interface PaginationProps {
+interface CatalogPaginationProps {
   page: number;
   setPage: React.Dispatch<React.SetStateAction<number>>;
   totalPages: number;
 }
 
-export function Pagination({ page, setPage, totalPages }: PaginationProps) {
+export function CatalogPagination({
+  page,
+  setPage,
+  totalPages,
+}: CatalogPaginationProps) {
   const hasNextPage = page < totalPages;
   const hasPreviuosPage = page > 1;
 

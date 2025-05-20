@@ -17,12 +17,12 @@ const options = [
   { label: "Mais vendidos", value: "best-sellers" },
 ];
 
-interface OrderSelectProps {
+interface CatalogOrderByProps {
   orderBy: CatalogOrderOption | null;
   setOrderBy: React.Dispatch<React.SetStateAction<CatalogOrderOption | null>>;
 }
 
-export function OrderSelect({ orderBy, setOrderBy }: OrderSelectProps) {
+export function CatalogOrderBy({ orderBy, setOrderBy }: CatalogOrderByProps) {
   return (
     <div className="relative">
       <Listbox value={orderBy} onChange={setOrderBy}>

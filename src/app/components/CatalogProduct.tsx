@@ -5,14 +5,19 @@ function formatPrice(priceInCents: number) {
   return `R$ ${(priceInCents / 100).toFixed(2).toString().replace(".", ",")}`;
 }
 
-interface ProductProps {
+interface CatalogProductProps {
   id: string;
   name: string;
   imageUrl: string;
   price: number;
 }
 
-export function Product({ id, name, imageUrl, price }: ProductProps) {
+export function CatalogProduct({
+  id,
+  name,
+  imageUrl,
+  price,
+}: CatalogProductProps) {
   return (
     <Link
       href={`/product/${id}`}

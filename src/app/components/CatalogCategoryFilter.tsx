@@ -7,12 +7,15 @@ const options = [
   { label: "CANECAS", value: "mugs", className: "w-[72px]" },
 ];
 
-interface CategoryFilterProps {
+interface CatalogCategoryFilterProps {
   filter: string;
   setFilter: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export function CategoryFilter({ filter, setFilter }: CategoryFilterProps) {
+export function CatalogCategoryFilter({
+  filter,
+  setFilter,
+}: CatalogCategoryFilterProps) {
   return (
     <RadioGroup
       value={filter}
