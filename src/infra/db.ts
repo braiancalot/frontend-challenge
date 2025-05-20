@@ -13,7 +13,7 @@ interface Product {
 }
 
 function getProducts() {
-  const filePath = path.join("public", "products.json");
+  const filePath = path.join(process.cwd(), "src", "infra", "products.json");
   const jsonData = fs.readFileSync(filePath, "utf-8");
   const products = JSON.parse(jsonData).products.map((product: Product) => ({
     ...product,
