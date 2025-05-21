@@ -1,16 +1,6 @@
 import fs from "fs";
 import path from "path";
-
-interface Product {
-  name: string;
-  description: string;
-  image_url: string;
-  category: string;
-  id: string;
-  price_in_cents: number;
-  sales: number;
-  created_at: string;
-}
+import { Product } from "src/types/common";
 
 function getProducts() {
   const filePath = path.join(process.cwd(), "src", "infra", "products.json");

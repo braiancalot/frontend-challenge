@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
-function formatPrice(priceInCents: number) {
-  return `R$ ${(priceInCents / 100).toFixed(2).toString().replace(".", ",")}`;
-}
+import { formatPrice } from "src/utils/commom";
 
 interface CatalogProductProps {
   id: string;

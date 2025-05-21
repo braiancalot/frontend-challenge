@@ -18,5 +18,5 @@ export default async function ProductPage({
     notFound();
   }
 
-  return <Product />;
+  return <Product product={product} />;
 }

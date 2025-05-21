@@ -2,6 +2,7 @@ import { Saira_Stencil_One } from "next/font/google";
 
 import { Cart } from "./Cart";
 import { Search } from "./Search";
+import Link from "next/link";
 
 const sairaStencilOne = Saira_Stencil_One({
   subsets: ["latin"],
@@ -12,11 +13,13 @@ export function Header() {
   return (
     <header className="bg-shape-1 px-2">
       <div className="max-w-[1120px] h-12 sm:h-[80px] m-auto flex justify-between items-center">
-        <h1
-          className={`${sairaStencilOne.className} text-2xl sm:text-[40px] text-header`}
-        >
-          capputeeno
-        </h1>
+        <Link href="/">
+          <h1
+            className={`${sairaStencilOne.className} text-2xl sm:text-[40px] text-header`}
+          >
+            capputeeno
+          </h1>
+        </Link>
 
         <div className="flex gap-2 sm:gap-6 items-center">
           <Search />
