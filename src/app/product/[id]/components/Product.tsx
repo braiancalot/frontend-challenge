@@ -10,7 +10,7 @@ export function Product({ product }: { product: ProductType }) {
   const category = product.category === "mugs" ? "Caneca" : "Camiseta";
 
   return (
-    <div className="max-w-[1120px] m-auto px-2">
+    <div className="max-w-[1120px] m-auto px-4">
       <div className="mt-3 lg:mt-[25px]">
         <BackButton />
       </div>
@@ -52,7 +52,7 @@ export function Product({ product }: { product: ProductType }) {
             </section>
           </div>
 
-          <button className="bg-brand-blue font-medium text-add-cart-button py-2.5 px-4 rounded-sm cursor-pointer mt-8 self-center flex justify-center items-center gap-3 hover:bg-brand-blue-hover active:bg-brand-blue-active">
+          <button className="bg-brand-blue font-medium text-button-text py-2.5 px-4 rounded-sm cursor-pointer mt-8 self-center flex justify-center items-center gap-3 hover:bg-brand-blue-hover active:bg-brand-blue-active">
             <Image src={ShoppingBagWhite} alt="ShoppingBag" />
             ADICIONAR AO CARRINHO
           </button>

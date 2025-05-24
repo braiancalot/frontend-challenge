@@ -8,7 +8,7 @@
   --color-text-body: #737380;
   --color-product-name: #41414d;
   --color-product-price: #09090a;
-  --color-add-cart-button: #f5f5fa;
+  --color-button-text: #f5f5fa;
 
   --color-shape-1: #ffffff;
   --color-shape-2: #dce2e5;
@@ -16,6 +16,7 @@
   --color-shape-4: #f0f0f5;
   --color-shape-5: #f3f5f6;
   --color-shape-6: #e1e1e6;
+  --color-shape-7: #a8a8b6;
 
   --color-brand-blue: #115d8c;
   --color-brand-blue-hover: #0e4a70;
@@ -24,6 +25,8 @@
 
   --color-delete: #de3838;
   --color-green: #51b853;
+  --color-green-hover: #419644;
+  --color-green-active: #317535;
   --color-green-low: #dcf5dd;
   --color-blue-low: #dde9f0;
   --color-orange-low: #ffa585;
