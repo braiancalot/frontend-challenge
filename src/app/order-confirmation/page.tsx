@@ -1,7 +1,15 @@
-import Link from "next/link";
+"use client";
 
-export default async function OrderConfirmation() {
-  await new Promise<void>((resolve) => setTimeout(() => resolve(), 2000)); // fake loading
+import Link from "next/link";
+import { useEffect } from "react";
+import { useCart } from "src/hooks/useCart";
+
+export default function OrderConfirmation() {
+  const { clearCart } = useCart();
+
+  useEffect(() => {
+    clearCart();
+  }, []);
 
   return (
     <div className="max-w-[1120px] m-auto px-4">

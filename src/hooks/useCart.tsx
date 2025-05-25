@@ -54,6 +54,10 @@ export function CartProvider({ children }: CartProviderProps) {
     );
   }
 
+  function clearCart() {
+    setCartProducts([]);
+  }
+
   return (
     <CartContext.Provider
       value={{
@@ -63,6 +67,7 @@ export function CartProvider({ children }: CartProviderProps) {
         quantityInCart,
         updateQuantity,
         removeFromCart,
+        clearCart,
       }}
     >
       {children}
@@ -87,6 +92,7 @@ interface CartContextType {
   quantityInCart: (id: string) => number;
   updateQuantity: (id: string, newQuantity: number) => void;
   removeFromCart: (id: string) => void;
+  clearCart: () => void;
 }
 
 interface CartProviderProps {
