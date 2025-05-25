@@ -1,7 +1,5 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
+import { MAX_QUANTITY_PER_CART_ITEM } from "src/utils/cart";
 
 import {
   Listbox,
@@ -12,16 +10,24 @@ import {
 
 import ChevromDown from "public/chevrom-down.svg";
 
-const options = Array.from({ length: 10 }).map((_, index) => index + 1);
+const options = Array.from({ length: MAX_QUANTITY_PER_CART_ITEM }).map(
+  (_, index) => index + 1,
+);
 
-export function CartProductQuantity() {
-  const [value, setValue] = useState(options[0]);
+interface CartProductQuantityProps {
+  quantity: number;
+  handleUpdateQuantity: (newQuantity: number) => void;
+}
 
+export function CartProductQuantity({
+  quantity,
+  handleUpdateQuantity,
+}: CartProductQuantityProps) {
   return (
     <div className="relative">
-      <Listbox value={value} onChange={setValue}>
+      <Listbox value={quantity} onChange={handleUpdateQuantity}>
         <ListboxButton className="flex items-center gap-3 pl-3 pr-2 py-1 bg-shape-5 border border-shape-7 rounded-lg text-text-body cursor-pointer">
-          {value}
+          {quantity}
           <Image src={ChevromDown} alt="ChevromDown" />
         </ListboxButton>
         <ListboxOptions

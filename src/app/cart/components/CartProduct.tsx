@@ -1,10 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-
+import { useCart } from "src/hooks/useCart";
 import { formatPrice } from "src/utils/commom";
-
 import { CartProductQuantity } from "./CartProductQuantity";
-
 import Trash from "public/trash.svg";
 
 interface CartProductProps {
@@ -13,6 +11,7 @@ interface CartProductProps {
   description: string;
   imageUrl: string;
   price: number;
+  quantity: number;
 }
 
 export function CartProduct({
@@ -21,7 +20,18 @@ export function CartProduct({
   description,
   imageUrl,
   price,
+  quantity,
 }: CartProductProps) {
+  const { updateQuantity, removeFromCart } = useCart();
+
+  function handleUpdateQuantity(newQuantity: number) {
+    updateQuantity(id, newQuantity);
+  }
+
+  function handleRemove() {
+    removeFromCart(id);
+  }
+
   return (
     <div className="flex flex-col sm:flex-row bg-shape-1 rounded-lg overflow-hidden">
       <Image
@@ -41,7 +51,10 @@ export function CartProduct({
             >
               {name}
             </Link>
-            <button className="cursor-pointer hover:bg-shape-5 rounded-full active:bg-shape-3">
+            <button
+              onClick={handleRemove}
+              className="cursor-pointer hover:bg-shape-5 rounded-full active:bg-shape-3"
+            >
               <Image src={Trash} alt="Trash" />
             </button>
           </div>
@@ -50,10 +63,13 @@ export function CartProduct({
         </div>
 
         <div className="flex justify-between mt-8 sm:mt-0">
-          <CartProductQuantity />
+          <CartProductQuantity
+            quantity={quantity}
+            handleUpdateQuantity={handleUpdateQuantity}
+          />
 
           <span className="font-semibold text-product-price">
-            {formatPrice(price)}
+            {formatPrice(price * quantity)}
           </span>
         </div>
       </div>

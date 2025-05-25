@@ -3,6 +3,7 @@ import { Saira } from "next/font/google";
 
 import "../styles/globals.css";
 import { Header } from "@/components/layout/Header/Header";
+import { CartProvider } from "src/hooks/useCart";
 
 const saira = Saira({
   subsets: ["latin"],
@@ -22,8 +23,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={saira.className}>
       <body className="max-h-dvh flex flex-col">
-        <Header />
-        <main className="flex-1 overflow-auto">{children}</main>
+        <CartProvider>
+          <Header />
+          <main className="flex-1 overflow-auto">{children}</main>
+        </CartProvider>
       </body>
     </html>
   );

@@ -3,8 +3,7 @@ import { BackButton } from "@/components/common/BackButton";
 
 import { Product as ProductType } from "src/types/common";
 import { formatPrice } from "src/utils/commom";
-
-import ShoppingBagWhite from "public/shopping-bag-white.svg";
+import { AddToCartButton } from "./AddToCartButton";
 
 export function Product({ product }: { product: ProductType }) {
   const category = product.category === "mugs" ? "Caneca" : "Camiseta";
@@ -21,7 +20,7 @@ export function Product({ product }: { product: ProductType }) {
             alt={product.name}
             width={640}
             height={580}
-            className="w-full lg:w-[640px] lg:h-[580px] object-cover"
+            className="w-full h-auto lg:w-[640px] lg:h-[580px] object-cover"
           />
         </div>
         <div className="w-full flex flex-col gap-2 lg:justify-between mb-4">
@@ -52,10 +51,7 @@ export function Product({ product }: { product: ProductType }) {
             </section>
           </div>
 
-          <button className="bg-brand-blue font-medium text-button-text py-2.5 px-4 rounded-sm cursor-pointer mt-8 self-center flex justify-center items-center gap-3 hover:bg-brand-blue-hover active:bg-brand-blue-active">
-            <Image src={ShoppingBagWhite} alt="ShoppingBag" />
-            ADICIONAR AO CARRINHO
-          </button>
+          <AddToCartButton product={product} />
         </div>
       </div>
     </div>
