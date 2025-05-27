@@ -1,8 +1,15 @@
 "use client";
 
-import { createContext, ReactNode, useContext, useState } from "react";
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { CartProduct } from "src/types/cart";
 import { Product } from "src/types/common";
+import { MAX_QUANTITY_PER_CART_ITEM } from "src/utils/cart";
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
@@ -12,6 +19,27 @@ export function CartProvider({ children }: CartProviderProps) {
     (total, currentProduct) => total + currentProduct.quantity,
     0,
   );
+
+  useEffect(() => {
+    const storedCartString = localStorage.getItem("cart");
+    if (storedCartString) {
+      const parsed = JSON.parse(storedCartString);
+
+      const adjustedCart = parsed.map((product: CartProduct) => {
+        if (product.quantity > MAX_QUANTITY_PER_CART_ITEM) {
+          return { ...product, quantity: MAX_QUANTITY_PER_CART_ITEM };
+        }
+
+        return product;
+      });
+
+      setCartProducts(adjustedCart);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cartProducts));
+  }, [cartProducts]);
 
   function addToCart(product: Product) {
     setCartProducts((prevProducts) => {
