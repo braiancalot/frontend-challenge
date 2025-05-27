@@ -7,7 +7,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import { CartProduct } from "src/types/cart";
+import { CartProduct, CartSchema } from "src/types/cart";
 import { Product } from "src/types/common";
 import { MAX_QUANTITY_PER_CART_ITEM } from "src/utils/cart";
 
@@ -23,17 +23,22 @@ export function CartProvider({ children }: CartProviderProps) {
   useEffect(() => {
     const storedCartString = localStorage.getItem("cart");
     if (storedCartString) {
-      const parsed = JSON.parse(storedCartString);
+      try {
+        const parsed = JSON.parse(storedCartString);
+        const validatedCart = CartSchema.parse(parsed);
 
-      const adjustedCart = parsed.map((product: CartProduct) => {
-        if (product.quantity > MAX_QUANTITY_PER_CART_ITEM) {
-          return { ...product, quantity: MAX_QUANTITY_PER_CART_ITEM };
-        }
+        const adjustedCart = validatedCart.map((product: CartProduct) => {
+          if (product.quantity > MAX_QUANTITY_PER_CART_ITEM) {
+            return { ...product, quantity: MAX_QUANTITY_PER_CART_ITEM };
+          }
 
-        return product;
-      });
+          return product;
+        });
 
-      setCartProducts(adjustedCart);
+        setCartProducts(adjustedCart);
+      } catch (error) {
+        console.error("Error loading cart from localStorage:", error);
+      }
     }
   }, []);
 
