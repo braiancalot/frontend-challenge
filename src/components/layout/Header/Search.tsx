@@ -3,37 +3,75 @@ import { useState } from "react";
 
 import Image from "next/image";
 import SearchLoupe from "public/search-loupe.svg";
+import { Product } from "src/types/common";
+import {
+  Combobox,
+  ComboboxButton,
+  ComboboxInput,
+  ComboboxOption,
+  ComboboxOptions,
+} from "@headlessui/react";
+import { useRouter } from "next/navigation";
 
-export function Search() {
-  const [search, setSearch] = useState("");
+function filterProducts(products: Product[], query: string) {
+  return query === ""
+    ? []
+    : products.filter((product) =>
+        product.name.toLowerCase().includes(query.toLowerCase()),
+      );
+}
+
+export function Search({ products }: { products: Product[] }) {
+  const [query, setQuery] = useState("");
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const router = useRouter();
+
+  const filteredProducts = filterProducts(products, query);
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
-    setSearch(event.target.value);
+    setQuery(event.target.value);
+  }
+
+  function handleSelect(product: Product) {
+    setSelectedProduct(product);
+    setQuery("");
+    if (product) {
+      router.push(`/product/${product.id}`);
+    }
   }
 
   return (
-    <div className="relative">
-      <input
-        className="w-40 sm:w-[352px] text-xs sm:text-sm text-text-body placeholder:text-text-body bg-shape-5 px-2 sm:px-4 py-1.5 sm:py-2.5 rounded-lg focus:outline-shape-2 pr-10"
-        type="text"
-        placeholder="Procurando por algo específico?"
-        value={search}
-        onChange={handleChange}
-      />
+    <Combobox value={selectedProduct} onChange={handleSelect}>
+      <div className="relative">
+        <ComboboxInput
+          className="w-40 sm:w-[352px] text-xs sm:text-sm text-text-body placeholder:text-text-body bg-shape-5 px-2 sm:px-4 py-1.5 sm:py-2.5 rounded-lg focus:outline-shape-2 pr-10"
+          displayValue={(product: Product) => product?.name ?? query}
+          placeholder="Procurando por algo específico?"
+          onChange={handleChange}
+        />
 
-      <Image
-        className="absolute right-2 top-1/2 -translate-y-1/2 block sm:hidden"
-        src={SearchLoupe}
-        alt="Search"
-        width={18}
-        height={18}
-      />
+        <ComboboxButton className="absolute right-2 top-1/2 -translate-y-1/2 sm:right-4 sm:top-2 sm:translate-none pointer-events-none">
+          <Image
+            className="w-[18px] h-[18px] sm:w-6 sm:h-6 "
+            src={SearchLoupe}
+            alt="Search"
+          />
+        </ComboboxButton>
 
-      <Image
-        className="absolute right-4 top-2 pointer-events-none hidden sm:block"
-        src={SearchLoupe}
-        alt="Search"
-      />
-    </div>
+        {filteredProducts.length > 0 && (
+          <ComboboxOptions className="absolute z-50 mt-1 max-h-60 w-full overflow-auto rounded-xl bg-white p-1 shadow-lg">
+            {filteredProducts.map((product) => (
+              <ComboboxOption
+                key={product.id}
+                value={product}
+                className="flex cursor-pointer items-center gap-2 rounded-lg px-3 py-1.5 select-none hover:bg-gray-100"
+              >
+                {product.name}
+              </ComboboxOption>
+            ))}
+          </ComboboxOptions>
+        )}
+      </div>
+    </Combobox>
   );
 }
