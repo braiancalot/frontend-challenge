@@ -9,6 +9,7 @@ import { formatPrice } from "src/utils/commom";
 import { CartEmpty } from "./CartEmpty";
 
 const SHIPPING_COST_IN_CENTS = 40 * 100;
+const FREE_SHIPPING_MINIMUM_IN_CENTS = 900 * 100;
 
 export function Cart() {
   const { cartProducts, totalCartProducts } = useCart();
@@ -19,6 +20,9 @@ export function Cart() {
       total + currentProduct.price_in_cents * currentProduct.quantity,
     0,
   );
+
+  const shippingCost =
+    totalPrice < FREE_SHIPPING_MINIMUM_IN_CENTS ? SHIPPING_COST_IN_CENTS : 0;
 
   function handleCheckout() {
     router.push("/order-confirmation");
@@ -77,7 +81,7 @@ export function Cart() {
               <div className="mt-3 flex justify-between">
                 <span className="text-product-name">Entrega</span>
                 <span className="text-product-name">
-                  {formatPrice(SHIPPING_COST_IN_CENTS)}
+                  {formatPrice(shippingCost)}
                 </span>
               </div>
 
@@ -86,7 +90,7 @@ export function Cart() {
               <div className="mt-3 flex justify-between">
                 <span className="font-semibold text-product-name">Total</span>
                 <span className="font-semibold text-product-name">
-                  {formatPrice(totalPrice + SHIPPING_COST_IN_CENTS)}
+                  {formatPrice(totalPrice + shippingCost)}
                 </span>
               </div>
 
