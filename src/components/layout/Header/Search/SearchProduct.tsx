@@ -9,7 +9,7 @@ interface SearchProductProps {
 
 export function SearchProduct({ name, imageUrl, price }: SearchProductProps) {
   return (
-    <div className="flex cursor-pointer items-center gap-2 rounded-lg px-3 py-1.5 select-none hover:bg-gray-100">
+    <div className="flex cursor-pointer items-center gap-2 rounded-lg px-3 py-1.5 select-none hover:bg-gray-100 w-full">
       <div className="rounded-sm overflow-hidden">
         <Image
           src={imageUrl}
