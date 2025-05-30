@@ -1,7 +1,7 @@
 import { Saira_Stencil_One } from "next/font/google";
 
 import { CartButton } from "./CartButton";
-import { Search } from "./Search";
+import { Search } from "./Search/Search";
 import Link from "next/link";
 import db from "src/infra/db";
 

@@ -12,6 +12,7 @@ import {
   ComboboxOptions,
 } from "@headlessui/react";
 import { useRouter } from "next/navigation";
+import { SearchProduct } from "./SearchProduct";
 
 function filterProducts(products: Product[], query: string) {
   return query === ""
@@ -45,7 +46,7 @@ export function Search({ products }: { products: Product[] }) {
       <div className="relative">
         <ComboboxInput
           className="w-40 sm:w-[352px] text-xs sm:text-sm text-text-body placeholder:text-text-body bg-shape-5 px-2 sm:px-4 py-1.5 sm:py-2.5 rounded-lg focus:outline-shape-2 pr-10"
-          displayValue={(product: Product) => product?.name ?? query}
+          displayValue={() => query}
           placeholder="Procurando por algo específico?"
           onChange={handleChange}
         />
@@ -59,14 +60,14 @@ export function Search({ products }: { products: Product[] }) {
         </ComboboxButton>
 
         {filteredProducts.length > 0 && (
-          <ComboboxOptions className="absolute z-50 mt-1 max-h-60 w-full overflow-auto rounded-xl bg-white p-1 shadow-lg">
+          <ComboboxOptions className="absolute z-50 mt-1 max-h-60 w-full max-w-full overflow-auto rounded-xl bg-white p-1 shadow-lg">
             {filteredProducts.map((product) => (
-              <ComboboxOption
-                key={product.id}
-                value={product}
-                className="flex cursor-pointer items-center gap-2 rounded-lg px-3 py-1.5 select-none hover:bg-gray-100"
-              >
-                {product.name}
+              <ComboboxOption key={product.id} value={product}>
+                <SearchProduct
+                  name={product.name}
+                  imageUrl={product.image_url}
+                  price={product.price_in_cents}
+                />
               </ComboboxOption>
             ))}
           </ComboboxOptions>
